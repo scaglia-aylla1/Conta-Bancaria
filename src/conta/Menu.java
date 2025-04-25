@@ -21,6 +21,9 @@ public class Menu {
 		c1.setTitular("Aylla Scaglia");
 		c1.depositar(200000);
 		c1.visualizar();
+		System.out.println("                                                      ");
+		System.out.println("                                                      ");
+		System.out.println("                                                      ");
 		
 		while(true) {
 			System.out.println(Cores.TEXT_PURPLE_BRIGHT + Cores.ANSI_BLACK_BACKGROUND
