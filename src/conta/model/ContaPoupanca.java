@@ -4,10 +4,6 @@ public class ContaPoupanca extends Conta{
 	
 	private int aniversario;
 
-	public ContaPoupanca() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
 
 	public ContaPoupanca(int numero, int agencia, int tipo, String titular, float saldo, int aniversario) {
 		super(numero, agencia, tipo, titular, saldo);
