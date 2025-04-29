@@ -12,17 +12,7 @@ public class Menu {
 	public static void main(String[] args) {
 		
 		Scanner scan = new Scanner(System.in);
-		
 		int opcao;
-		Conta c1 = new Conta(1, 123, 1, "Aylla", 500000);
-		c1.visualizar();
-		
-		c1.sacar(100);
-		c1.visualizar();
-		
-		c1.setTitular("Aylla Scaglia");
-		c1.depositar(200000);
-		c1.visualizar();
 		
 		ContaCorrente cc1 = new ContaCorrente(2, 456, 1, "Renata Negrini", 600000, 60000);
 		cc1.visualizar();
