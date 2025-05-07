@@ -1,6 +1,8 @@
 package conta.controller;
 
 import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Collectors;
 
 import conta.model.Conta;
 import conta.repository.ContaRepository;
@@ -30,6 +32,20 @@ public class ContaController implements ContaRepository{
 		for(var conta : listarContas) {
 			conta.visualizar();
 		}
+		
+	}
+	
+	@Override
+	public void listarPorTitular(String titular) {
+		List<Conta> listaTitulares = listarContas.stream()
+				.filter(c -> c.getTitular().toUpperCase().contains(titular.toUpperCase()))
+				.collect(Collectors.toList());
+		
+		if(listaTitulares.isEmpty())
+			System.out.printf("\nNenhuma conta foi encontrada com base no critério: %s", titular);
+		
+		for(var conta : listaTitulares)
+			conta.visualizar();
 		
 	}
 
@@ -118,5 +134,7 @@ public class ContaController implements ContaRepository{
 		}
 		return null;
 	}
+
+
 
 }
