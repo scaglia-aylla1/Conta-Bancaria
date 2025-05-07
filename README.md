@@ -168,5 +168,5 @@ Este repositório é parte de um projeto educacional, mas contribuições são s
 
 <br />
 
-Desenvolvido por [**Aylla Scaglia**](https://github.com/scaglia-aylla1)
+Desenvolvido por [**Aylla Scaglia**](https://github.com/scaglia-aylla1) no Bootcamp Generation Brasil.
 Para dúvidas, sugestões ou colaborações, entre em contato via GitHub ou abra uma issue!
